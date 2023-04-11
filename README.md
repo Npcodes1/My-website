@@ -1,0 +1,1 @@
+This is the updated version of my website. I've utilized HTML, CSS, and some Javascript.
