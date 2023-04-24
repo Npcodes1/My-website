@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-#header {
+.header {
     min-height: 100vh;
     width: 100%;
     background-image: url(images/gears-g98c93929b_1920.jpg);
@@ -111,21 +111,16 @@ p {
 .about-me {
     display: flex;
     justify-content: space-between;
-    height: 25vh;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.about-col {
-    flex-basis: 50%;
+    width: 80%;
+    margin: auto;
+    text-align: center;
     background: #1C82AD;
     border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
+    padding: 20px;
     box-sizing: border-box;
-}
+}  
 
-.about-col p {
+.about-me p {
     color: #fff;
 }
 
@@ -137,10 +132,19 @@ p {
     margin: 20px;
 }
 
+.about-btn {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
 .btn {
-    background-color: #1C82AD;
+    background-color: #1c82AD;
     border-radius: 12px;
     box-shadow: 5px 5px;
+    text-decoration: none;
 }
 
 .btn h3 {
@@ -150,17 +154,14 @@ p {
 }
 
 .btn:hover {
-    background-color: #0A2647;
+    background-color:  #0A2647;
     border-width: 2px;
     transition: 1s;
 }
 
-.btn h3:hover {
-    color: #fff;
-}
-
-.btn a {
+.btn:hover .underline {
     text-decoration: none;
+    border-bottom: #0A2647; 
 }
 
 /* Projects Section */
@@ -170,8 +171,13 @@ p {
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    padding-bottom: 100px;
     background: #0A2647;
     color: #fff;  
+}
+
+.projects p {
+    color: #fff;
 }
 
 .project-col {
@@ -183,7 +189,7 @@ p {
 }
 
 .project-col img {
-    width: 100%;
+    width: 80%;
 }
 
 .row {
@@ -193,19 +199,36 @@ p {
 }
 
 /* Footer Section */
-.footer {
+#contact {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    padding-bottom: 50px;
     background-color: #fff;
+    color:#1C82AD;
 }
 
+a .fa-brands, .fa-solid {
+    margin: 10px;
+    color: #1C82AD;
+}
+
+.top {
+    color: #1C82AD;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.top:hover {
+    color: #0A2647;
+    text-decoration: none;
+}
 
 
 /* Media Query */
 
-@media(max-width: 700px) {
+@media screen and (max-width: 700px) {
     .text-box h1 {
         font-size: 20px;
     }    
@@ -224,7 +247,6 @@ p {
 
     .nav-links ul li {
         display: block;
-        text-align: center;
     }
 
     .nav-links ul li:hover::after {
