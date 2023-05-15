@@ -9,3 +9,10 @@ let navLinks = document.getElementById ("navLinks");
         function hideMenu() {
             navLinks.style.right = "-200px";
         }
+
+
+// When the user clicks on the button, the popup opens
+function myFunction() {
+    let popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}

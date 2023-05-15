@@ -57,11 +57,21 @@
                 <p>My name is Nicole Payne and I'm a coder! Come learn more about me and how/why this med tech is transitioning into tech!</p>
             </div>
             <div class="about-btn">
-                <button class="btn">
-                    <a href="about.html" class="underline" target="_blank" alt="About Me link" >
+                <button class="btn" type="submit" onclick="myFunction()">
                         <h3> About Me!</h3>
-                    </a>
                 </button>
+                <div class="popup" id="popup">
+                    <span class="popuptext" id="myPopup">
+                        I started coding back in 2022. I've always been interested in learning, but it wasn't until there was a Techlahoma event that I thought I'd give it a shot. 
+                        
+                        I've been hooked ever since. As a molecular medical technologist, I come from a background in biology and healthcare. I've tested for local and national food outbreaks, 
+                        bioterrorism exposures, Covid-19, HIV, HCV, and all kinds of STDs lol.
+                        
+                        With everything becoming automated in my field, the amount of hands-on work I do has become really limited. So I'm hoping to switch over to the other side to learn about software and web development.
+                        
+                        In my spare time, I like to destress with reading, tv, kickboxing, and yoga. I also like puzzles and brainteasers.
+                    </span>
+                </div>
             </div>
         </section>
 
@@ -69,7 +79,7 @@
 
         <section id="projects">
             <h1>My Projects</h1>
-            <p>These are my projects, ranging from most recent to oldest.</p>
+            <p>Projects coming soon! They're all on GitHub!</p>
             <!-- <div class="row">
                 <div class="project-col">
                     <h3>Tribute Page</h3>
@@ -120,7 +130,14 @@
             <a href="mailto:nicole1rock@gmail.com">
                 <i class="fa-solid fa-message"></i>
             </a>
-            <p>&copy 2023</p>
+            <div class="copyright">
+                <p class="text-center">&copy; 
+                    <script>
+                        let CurrentYear = new Date().getFullYear()
+                        document.write(CurrentYear)
+                    </script>
+                </p>
+            </div>
             <a href="#" class="top">Back To Top</a>
 
         </section>
