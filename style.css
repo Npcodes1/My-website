@@ -118,7 +118,7 @@ p {
     border-radius: 10px;
     padding: 20px;
     box-sizing: border-box;
-}  
+}
 
 .about-me p {
     color: #fff;
@@ -126,7 +126,7 @@ p {
 }
 
 .hello {
-    color:#1C82AD;
+    color: #1C82AD;
 }
 
 .headshot {
@@ -155,14 +155,14 @@ p {
 }
 
 .btn:hover {
-    background-color:  #0A2647;
+    background-color: #0A2647;
     border-width: 2px;
     transition: 1s;
 }
 
 .btn:hover .underline {
     text-decoration: none;
-    border-bottom: #0A2647; 
+    border-bottom: #0A2647;
 }
 
 /* Popup container */
@@ -177,17 +177,19 @@ p {
 
 .popup .popuptext {
     visibility: hidden;
-    width: 500px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
     background-color: #0A2647;
     color: #fff;
-    text-align: center;
-    border-radius: 6px;
+    text-align: left;
+    border-radius: 12px;
     padding: 20px;
+    margin-left: 10px;
     position: absolute;
     z-index: 1;
     bottom: 125%;
     left: 50%;
+    font-size: 15px;
 }
 
 /* Popup arrow */
@@ -212,13 +214,23 @@ p {
 /* Adding animation (fade in the popup) */
 
 @-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 
@@ -232,29 +244,20 @@ p {
     padding-top: 100px;
     padding-bottom: 100px;
     background: #0A2647;
-    color: #fff;  
+    color: #fff;
 }
 
 .projects p {
     color: #fff;
 }
 
-.project-col {
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-}
-
-.project-col img {
-    width: 80%;
+.card-text,
+.card-title {
+    color: #555;
 }
 
 .row {
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
+    margin: 20px;
 }
 
 /* Footer Section */
@@ -265,10 +268,11 @@ p {
     padding-top: 100px;
     padding-bottom: 50px;
     background-color: #fff;
-    color:#1C82AD;
+    color: #1C82AD;
 }
 
-a .fa-brands, .fa-solid {
+a .fa-brands,
+.fa-solid {
     margin: 10px;
     color: #1C82AD;
 }
@@ -290,7 +294,7 @@ a .fa-brands, .fa-solid {
 @media screen and (max-width: 700px) {
     .text-box h1 {
         font-size: 20px;
-    }    
+    }
 
     .nav-links {
         position: absolute;
@@ -327,9 +331,4 @@ a .fa-brands, .fa-solid {
     nav img {
         width: 100px;
     }
-
-    .row {
-        display: block;
-    }
-
 }
