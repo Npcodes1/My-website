@@ -111,10 +111,10 @@ p {
 .about-me {
     display: flex;
     justify-content: space-between;
-    width: 40%;
+    width: 80%;
     margin: auto;
     text-align: center;
-    background: #1C82AD;
+    background-color: #1C82AD;
     border-radius: 10px;
     padding: 20px;
     box-sizing: border-box;
@@ -233,8 +233,6 @@ p {
     }
 }
 
-
-
 /* Projects Section */
 
 #projects {
@@ -251,13 +249,17 @@ p {
     color: #fff;
 }
 
-.card-text,
-.card-title {
-    color: #555;
+.col {
+    margin: 15px;
 }
 
-.row {
-    margin: 20px;
+.card {
+    padding-top: 20px;
+}
+
+.card-text,
+.card-title {
+    color: #1C82AD;
 }
 
 /* Footer Section */
