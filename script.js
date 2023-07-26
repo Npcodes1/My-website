@@ -1,11 +1,17 @@
-let navLinks = document.getElementById("navLinks");
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const navLinkItems = Array.from(navLinks.querySelectorAll("a"));
 
-// To show the menu bar when clicked on the bars symbol
-function showMenu() {
-    navLinks.style.right = "0";
-}
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
 
-// To hide the menu bar when clicking the x symbol
-function hideMenu() {
-    navLinks.style.right = "-200px";
-}
+// navLinkItems.forEach((link) => {
+//     link.addEventListener("click", (event) => {
+//         event.preventDefault();
+//         navLinkItems.forEach((item) => {
+//             item.classList.remove("active");
+//         });
+//         link.classList.add("active");
+//     });
+// });
