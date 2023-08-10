@@ -11,7 +11,7 @@
 }
 
 header {
-    min-height: 35rem;
+    min-height: 40rem;
     background-image: url(images/gears-g98c93929b_1920.jpg);
     background-position: center;
     background-size: cover;
@@ -34,7 +34,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 2;
     background-color: #0A2647;
     margin-bottom: 1rem;
 }
@@ -44,6 +43,7 @@ nav {
     align-items: flex-end;
     padding: 1rem;
     gap: 40px;
+    justify-content: center;
 }
 
 .nav-links li a {
@@ -103,7 +103,10 @@ p {
 }
 
 .about-me {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
     background-color: #1C82AD;
     border-radius: 10px;
     padding: 1.5rem;
@@ -113,7 +116,8 @@ p {
 .about-me p {
     color: #fff;
     font-size: 1.3rem;
-    text-align: left;
+    text-align: center;
+    flex: auto;
 }
 
 .hello {
@@ -165,19 +169,39 @@ a .fa-brands,
     text-decoration: none;
 }
 
-.col {
+.container {
     margin: 1rem;
     padding-top: 1rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.card-body {
+.card {
+    max-width: 100%;
+    margin: auto 1rem;
+    max-height: 90px;
+    flex: 1;
+}
+
+
+.card-project {
+    margin: 1rem;
+    padding: 0;
+}
+
+.card-project a {
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-title,
+.card-text {
+    color: #1C82AD;
     word-wrap: normal;
 }
 
-.card-text,
-.card-title {
-    color: #1C82AD;
-}
 
 /* Footer Section */
 
@@ -199,9 +223,7 @@ footer {
     nav {
         position: relative;
         padding: 20px;
-        z-index: 2;
     }
-
 
     .name {
         width: 90%;
@@ -211,6 +233,7 @@ footer {
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+        z-index: 1;
     }
 
     .hamburger {
@@ -230,6 +253,8 @@ footer {
         width: 100%;
         padding: 30px;
         transition: 0.3s slide-down;
+        z-index: 2;
+        height: 400px;
     }
 
     .nav-links.active {
@@ -271,4 +296,7 @@ footer {
         transition: 0.2s;
     }
 
+    .container {
+        justify-content: center;
+    }
 }
