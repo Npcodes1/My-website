@@ -10,32 +10,14 @@
     text-align: center;
 }
 
-header {
-    min-height: 40rem;
-    background-image: url(images/gears-g98c93929b_1920.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    text-shadow: 7px 7px 7px #000;
-}
-
 /* Navigation Bar */
-.name {
-    font-size: 3rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
 
 nav {
-    height: 70px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #0A2647;
-    margin-bottom: 1rem;
 }
 
 .nav-links {
@@ -79,6 +61,26 @@ nav {
     height: 2px;
     margin: 6px 0;
     background-color: #fff;
+}
+
+/* Title Section  */
+
+header {
+    min-height: 40rem;
+    background-image: url(images/gears-g98c93929b_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-shadow: 7px 7px 7px #000;
+}
+
+.name {
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /* About Me Section */
@@ -185,21 +187,17 @@ a .fa-brands,
     flex: 1;
 }
 
-
 .card-project {
     margin: 1rem;
     padding: 0;
-}
-
-.card-project a {
-    font-size: 20px;
-    text-align: center;
 }
 
 .card-title,
 .card-text {
     color: #1C82AD;
     word-wrap: normal;
+    font-size: 20px;
+    text-align: center;
 }
 
 
@@ -220,24 +218,9 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-    nav {
-        position: relative;
-        padding: 20px;
-    }
-
-    .name {
-        width: 90%;
-        padding-top: 10rem;
-        position: absolute;
-        top: 250%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        z-index: 1;
-    }
-
-    .hamburger {
-        display: block;
+    header {
+        height: 50rem;
+        font-size: 6rem;
     }
 
     .nav-links {
@@ -251,7 +234,7 @@ footer {
         top: -250%;
         left: 0;
         width: 100%;
-        padding: 30px;
+        padding: 30px 0;
         transition: 0.3s slide-down;
         z-index: 2;
         height: 400px;
@@ -296,7 +279,12 @@ footer {
         transition: 0.2s;
     }
 
-    .container {
-        justify-content: center;
+    .hamburger {
+        display: block;
+        padding: 30px 20px;
+    }
+
+    .card-title {
+        font-size: 15px;
     }
 }

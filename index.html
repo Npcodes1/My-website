@@ -34,33 +34,35 @@
 </head>
 
 <body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+        </ul>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
     <header>
-        <!-- Navigation Bar -->
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-            </ul>
-            <div class="name">
-                <h1>Tech N Tech</h1>
-                <p>Medical Technologist making the transition to Technology</p>
-            </div>
-            <div class="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </nav>
+        <section class="name">
+            <h1>Tech N Tech</h1>
+            <p>Medical Technologist making the transition to Technology</p>
+        </section>
     </header>
 
     <!-- About Section -->
     <main>
         <section id="about">
             <h2 class="hello">Hello!</h2>
-            <img class="headshot" src="images/Nicole Profile Pic-circle crop modified.png">
-            <div class="about-me">
+            <figure>
+                <img class="headshot" src="images/Nicole Profile Pic-circle crop modified.png">
+            </figure>
+            <article class="about-me">
                 <p>My name is Nicole Payne. I am a molecular medical technologist and started coding back in 2022.
                 </p>
 
@@ -69,114 +71,119 @@
                     and
                     brainteasers.
                 </p>
-            </div>
+            </article>
         </section>
 
         <section id="contact">
             <h2>Contact Me!</h2>
-            <p>I'd love to connect with more people! Feel free to reach out in any of the following formats.</p>
-            <a href="https://www.linkedin.com/in/nicolepayneswe/" alt="Nicole's LinkedIn Page">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/Npcodes1" alt="Nicole's GitHub Page">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="http://techlahoma.slack.com/" alt="Techlahoma's Slack">
-                <i class="fa-brands fa-slack"></i>
-            </a>
-            <a href="mailto:nicole1rock@gmail.com">
-                <i class="fa-solid fa-message"></i>
-            </a>
-
+            <article>
+                <p>I'd love to connect with more people! Feel free to reach out in any of the following formats.</p>
+                <a href="https://www.linkedin.com/in/nicolepayneswe/" alt="Nicole's LinkedIn Page">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Npcodes1" alt="Nicole's GitHub Page">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="http://techlahoma.slack.com/" alt="Techlahoma's Slack">
+                    <i class="fa-brands fa-slack"></i>
+                </a>
+                <a href="mailto:nicole1rock@gmail.com">
+                    <i class="fa-solid fa-message"></i>
+                </a>
+            </article>
         </section>
 
         <!-- Projects Section -->
 
         <section id="projects">
             <h2>My Projects</h2>
-            <p>Here are some of my projects, ranging from newest to oldest!</p>
-            <a href="https://github.com/Npcodes1?tab=repositories">GitHub Repositories</a>
-            <div class="container">
-                <div class="card">
-                    <div class="card-body">
-                        <a href="https://npcodes1.github.io/Tic-Tac-Toe/" alt="Tic-Tac-Toe Game link">
-                            <h5 class="card-title">Tic-Tac-Toe Game</h5>
-                            <p class="card-text"></p>
-                        </a>
+            <article>
+                <p>Here are some of my projects, ranging from newest to oldest!</p>
+                <a href="https://github.com/Npcodes1?tab=repositories">GitHub Repositories</a>
+                <div class="container">
+                    <div class="card">
+                        <div class="card-project">
+                            <a href="https://npcodes1.github.io/Tic-Tac-Toe/" alt="Tic-Tac-Toe Game link">
+                                <h5 class="card-title">Tic-Tac-Toe Game</h5>
+                                <p class="card-text"></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-project">
+                            <a href="https://npcodes1.github.io/Drum-Kit/" alt="Drum Kit Project link">
+                                <h5 class="card-title">Drum Kit</h5>
+                                <p class="card-text"></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-project">
+                            <a href="https://npcodes1.github.io/Dice-Game/" alt="Dice Game Project link">
+                                <h5 class="card-title">Dice Game</h5>
+                                <p class="card-text"></p>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-body">
-                        <a href="https://npcodes1.github.io/Drum-Kit/" alt="Drum Kit Project link">
-                            <h5 class="card-title">Drum Kit</h5>
-                            <p class="card-text"></p>
-                        </a>
+                <div class="container">
+                    <div class="card">
+                        <div class="card-project">
+                            <a href="https://npcodes1.github.io/Love-Calculator-Project/"
+                                alt="Love Calculator Project link">
+                                <h5 class="card-title">Love Calculator</h5>
+                                <p class="card-text"></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-project">
+                            <a href="https://npcodes1.github.io/Web-Dev-Bootcamp-Project-Tindog/"
+                                alt="TinDog Project link">
+                                <h5 class="card-title">TinDog</h5>
+                                <p class="card-text"></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-project">
+                            <a href="https://npcodes1.github.io/freeCodeCamp-Technical-Documentation-Page/"
+                                alt="Technical Documentation Page link">
+                                <h5 class="card-title">Technical Documentation Page</h5>
+                                <p class="card-text"></p>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-body">
-                        <a href="https://npcodes1.github.io/Dice-Game/" alt="Dice Game Project link">
-                            <h5 class="card-title">Dice Game</h5>
-                            <p class="card-text"></p>
-                        </a>
+                <div class="container">
+                    <div class="card">
+                        <div class="card-project">
+                            <a href="https://npcodes1.github.io/freeCodeCamp-Product-Landing-Page/"
+                                alt="Product Landing Page link">
+                                <h5 class="card-title">Product Landing Page</h5>
+                                <p class="card-text"></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-project">
+                            <a href="https://npcodes1.github.io/freeCodeCamp-Survey-Form/"
+                                alt="Survey Form Project link">
+                                <h5 class="card-title">Survey Form</h5>
+                                <p class="card-text"></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-project">
+                            <a href="https://npcodes1.github.io/freeCodeCamp-Tribute-Page/" alt="Tribute Page link">
+                                <h5 class="card-title">Tribute Page</h5>
+                                <p class="card-text"></p>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="card">
-                    <div class="card-body">
-                        <a href="https://npcodes1.github.io/Love-Calculator-Project/"
-                            alt="Love Calculator Project link">
-                            <h5 class="card-title">Love Calculator</h5>
-                            <p class="card-text"></p>
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <a href="https://npcodes1.github.io/Web-Dev-Bootcamp-Project-Tindog/" alt="TinDog Project link">
-                            <h5 class="card-title">TinDog</h5>
-                            <p class="card-text"></p>
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <a href="https://npcodes1.github.io/freeCodeCamp-Technical-Documentation-Page/"
-                            alt="Technical Documentation Page link">
-                            <h5 class="card-title">Technical Documentation Page</h5>
-                            <p class="card-text"></p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="card">
-                    <div class="card-body">
-                        <a href="https://npcodes1.github.io/freeCodeCamp-Product-Landing-Page/"
-                            alt="Product Landing Page link">
-                            <h5 class="card-title">Product Landing Page</h5>
-                            <p class="card-text"></p>
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <a href="https://npcodes1.github.io/freeCodeCamp-Survey-Form/" alt="Survey Form Project link">
-                            <h5 class="card-title">Survey Form</h5>
-                            <p class="card-text"></p>
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <a href="https://npcodes1.github.io/freeCodeCamp-Tribute-Page/" alt="Tribute Page link">
-                            <h5 class="card-title">Tribute Page</h5>
-                            <p class="card-text"></p>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            </article>
         </section>
     </main>
     <footer>
