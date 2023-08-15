@@ -50,17 +50,17 @@ nav {
     width: 100%;
 }
 
-.hamburger {
-    margin-left: 20px;
+.hamburger-btn {
+    background: none;
+    border: none;
+    margin: 6px 0;
     cursor: pointer;
-    display: none;
+    position: fixed;
+    left: 10%;
 }
 
-.hamburger div {
-    width: 30px;
-    height: 2px;
-    margin: 6px 0;
-    background-color: #fff;
+i.fa-solid {
+    color: #f7f7f7;
 }
 
 /* Title Section  */
