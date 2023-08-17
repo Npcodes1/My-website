@@ -60,7 +60,7 @@ nav {
     visibility: hidden;
 }
 
-i.fa-solid {
+.hamburger-btn i {
     color: #f7f7f7;
 }
 
@@ -68,10 +68,10 @@ i.fa-solid {
 
 header {
     min-height: 40rem;
+    width: 100%;
     background-image: url(images/gears-g98c93929b_1920.jpg);
     background-position: center;
     background-size: cover;
-    /* position: relative; */
     text-shadow: 7px 7px 7px #000;
 }
 
@@ -220,7 +220,7 @@ footer {
 @media screen and (max-width: 768px) {
 
     header {
-        height: 50rem;
+        height: 100vh;
         font-size: 6rem;
     }
 
